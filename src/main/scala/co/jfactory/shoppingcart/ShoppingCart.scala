@@ -35,5 +35,4 @@ class ShoppingCart() {
     case _ => throw new IllegalArgumentException("Unexpected Item in Bagging Area")
   }
 
-}
-gst
+}gs
