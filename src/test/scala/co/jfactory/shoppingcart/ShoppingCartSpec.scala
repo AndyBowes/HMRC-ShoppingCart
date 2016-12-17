@@ -33,7 +33,31 @@ class ShoppingCartSpec extends FlatSpec {
     assert(shoppingCart.value == 0.50)
   }
 
-  "Cart with 2 Apples" should " have size == 2 and value of 1.20" in {
+  "Cart with 3 Oranges" should " have size == 3 and value of 0.50" in {
+    val shoppingCart = new ShoppingCart()
+    shoppingCart.add(new Orange)
+    shoppingCart.add(new Orange)
+    assert(shoppingCart.size == 2)
+    assert(shoppingCart.value == 0.50)
+  }
+
+  "Cart with 4 Oranges" should " have size == 4 and value of 0.75" in {
+    val shoppingCart = new ShoppingCart()
+    shoppingCart.add(new Orange)
+    shoppingCart.add(new Orange)
+    assert(shoppingCart.size == 2)
+    assert(shoppingCart.value == 0.50)
+  }
+
+  "Cart with 2 Apples" should " have size == 2 and value of 0.60" in {
+    val shoppingCart = new ShoppingCart()
+    shoppingCart.add(new Apple)
+    shoppingCart.add(new Apple)
+    assert(shoppingCart.size == 2)
+    assert(shoppingCart.value == 1.20)
+  }
+
+  "Cart with 3 Apples" should " have size == 3 and value of 1.20" in {
     val shoppingCart = new ShoppingCart()
     shoppingCart.add(new Apple)
     shoppingCart.add(new Apple)
